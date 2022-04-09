@@ -1,5 +1,25 @@
 {
   "devDependencies": {
     "typescript": "^4.6.3"
-  }
+  },
+  "name": "slotushacks22",
+  "version": "1.0.0",
+  "description": "SLO Hacks 2022 Pennies for Progress google chrome extension",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hi1210/SLOtusHacks22.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hi1210/SLOtusHacks22/issues"
+  },
+  "homepage": "https://github.com/hi1210/SLOtusHacks22#readme"
 }
