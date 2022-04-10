@@ -8,3 +8,4 @@ const total =
         ? void 0
         : _a.querySelector('.text-display');
 console.log(total.innerText);
+chrome.runtime.sendMessage({ total: total.innerText });
