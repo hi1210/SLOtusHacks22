@@ -1,2 +1,2 @@
-const hello = "Hello SLOtus Hacks!"
+const hello = 'Hello SLOtus Hacks!';
 console.log(hello);

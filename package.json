@@ -1,25 +1,38 @@
 {
-  "devDependencies": {
-    "typescript": "^4.6.3"
-  },
-  "name": "slotushacks22",
-  "version": "1.0.0",
-  "description": "SLO Hacks 2022 Pennies for Progress google chrome extension",
-  "main": "index.js",
-  "dependencies": {
-    "typescript": "^4.6.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hi1210/SLOtusHacks22.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hi1210/SLOtusHacks22/issues"
-  },
-  "homepage": "https://github.com/hi1210/SLOtusHacks22#readme"
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.18.0",
+        "@typescript-eslint/parser": "^5.18.0",
+        "eslint": "^7.32.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-promise": "^5.2.0",
+        "prettier": "^2.6.2",
+        "typescript": "^4.6.3"
+    },
+    "name": "slotushacks22",
+    "version": "1.0.0",
+    "description": "SLO Hacks 2022 Pennies for Progress google chrome extension",
+    "main": "index.js",
+    "dependencies": {
+        "typescript": "^4.6.3"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint --ignore-path .gitignore --ext .js,.ts .",
+        "lintFix": "npm run lint -- --fix",
+        "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|html)\"",
+        "build": "tsc && prettier --ignore-path .gitignore --write **/*.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hi1210/SLOtusHacks22.git"
+    },
+    "author": "hi1210, kristylleung, nichkhtan, alnhuynh",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hi1210/SLOtusHacks22/issues"
+    },
+    "homepage": "https://github.com/hi1210/SLOtusHacks22#readme"
 }
