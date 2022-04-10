@@ -1,0 +1,84 @@
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #898989;
+	width: 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+  }
+
+.icon {
+	padding-left: 5%;
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+
+.icon img {
+	width: 50px;
+}
+
+body {
+	font-family:"halyard-display";
+	width: 600px;
+}
+
+h2 {
+    text-align: left;
+    /* margin-left: 100px; */
+}
+
+.top-section {
+    background-color: #898989;
+	padding-bottom: 5%;
+	font-size: 16pt;
+    }
+
+.top-section h3 {
+    color: #F18C14;
+    }
+
+.top-section a:link {
+	color: #F18C14;
+	text-decoration: none;
+	display: inline;
+	margin-left: 20px;
+	}
+
+.purchase {
+	margin-bottom: 20px;
+}
+
+.donation {
+    background-color: #ECECEC;
+    margin-bottom: 20px;
+  }
+
+.donation h2 {
+    font-weight: bold;
+  }
+
+.total {
+	margin-bottom: 60px;
+}
+
+.submit-button {
+	box-shadow: 2px 2px 4px 0px #3dc21b;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:16px 62px;
+	text-decoration:none;
+}
+.submit-button:hover {
+	background-color:#5cbf2a;
+}
+.submit-button:active {
+	position:relative;
+	top:1px;
+}
