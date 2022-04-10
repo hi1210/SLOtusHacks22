@@ -3,8 +3,12 @@
     "description": "SLO Hacks 2022 Pennies for Progress google chrome extension",
     "version": "1.0",
     "manifest_version": 3,
-    "permissions": ["storage"],
-    
+    "permissions": ["storage", "activeTab", "scripting", "tabs"],
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
     "action": {
         "default_popup": "popup.html",
         "default_icon": {

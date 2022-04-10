@@ -1,5 +1,6 @@
 {
     "devDependencies": {
+        "@types/chrome": "0.0.180",
         "@typescript-eslint/eslint-plugin": "^5.18.0",
         "@typescript-eslint/parser": "^5.18.0",
         "eslint": "^7.32.0",
@@ -23,7 +24,8 @@
         "lint": "eslint --ignore-path .gitignore --ext .js,.ts .",
         "lintFix": "npm run lint -- --fix",
         "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|html)\"",
-        "build": "tsc && prettier --ignore-path .gitignore --write **/*.js"
+        "build": "tsc && prettier --ignore-path .gitignore --write **/*.js",
+        "watch": "tsc --watch"
     },
     "repository": {
         "type": "git",
