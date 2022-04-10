@@ -26,6 +26,7 @@
         "lintFix": "npm run lint -- --fix",
         "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|html)\"",
         "formatJs": "prettier --write **/*.js",
+        "updateHTML": "cp src/html/* dist",
         "cpDist": "cp manifest.json dist && cp src/html/* dist && cp src/style/* dist && cp -r images dist",
         "build": "tsc && npm run lintFix && npm run cpDist && npm run format",
         "watch": "tsc-watch --onSuccess \"npm run formatJs\"",
