@@ -10,6 +10,7 @@
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-promise": "^5.2.0",
         "prettier": "^2.6.2",
+        "tsc-watch": "^5.0.3",
         "typescript": "^4.6.3"
     },
     "name": "slotushacks22",
@@ -24,8 +25,11 @@
         "lint": "eslint --ignore-path .gitignore --ext .js,.ts .",
         "lintFix": "npm run lint -- --fix",
         "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|html)\"",
-        "build": "tsc && prettier --ignore-path .gitignore --write **/*.js",
-        "watch": "tsc --watch"
+        "formatJs": "prettier --write **/*.js",
+        "cpDist": "cp manifest.json dist && cp src/html/* dist && cp src/style/* dist && cp -r images dist",
+        "build": "tsc && npm run lintFix && npm run cpDist && npm run format",
+        "watch": "tsc-watch --onSuccess \"npm run formatJs\"",
+        "clean": "rm -rf node_modules dist"
     },
     "repository": {
         "type": "git",
