@@ -2,9 +2,51 @@
 <html>
   <head>
     <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://use.typekit.net/apd8xej.css">
   </head>
+
   <body>
-    <button id="Pennies for Progress">Pennies for Progress!</button>
+    <div class="top-section">
+      <div class="icon">
+        <img src="images/pennyicon.png" alt="icon" />
+      </div>
+
+      <h3 style="margin-left: 20px; font-weight: lighter;">PENNIES FOR</h3>
+      <h1 style="margin-left: 20px; font-weight: lighter; font-size: 18pt;">Cause Goes Here</h1>
+      <a href="https://donorbox.org/emergencyukraine">Maya's Hope</a>
+      <p style="display: inline;">has 1242 donations so far.</p>
+    </div>
+    
+    <br />
+
+    <div class="purchase">
+      <h2 style="display: inline; float: left">Original</h2>
+      <p style="float: right">$36.16</p>
+    </div>
+
+    <br />
+    <br />
+    <div class="donation">
+      <h2 class="bold" style="display: inline; text-align: left; margin-left: -65px;">Your donation</h2>
+       <!-- radio buttons for rounding up options -->
+      <input type="radio" name="amount" value="Nearest Dollar" style="display: inline; margin-left: 206px;">$37.00 (0.84)<br>
+      <input type="radio" name="amount" value="Nearest Ten" style=" margin-left: 320px;">$40.00 (3.84)<br>
+      <input type="radio" name="amount" value="Manual"style="margin-left: 320px;">Other <input type="text" name="other_reason" />
+    </div>
+
+    <div class="total">
+      <h2 style="float: left">Total</h2>
+      <p style="float: right">$40.00</p>
+    </div>
+
+    <br /><br />
+
+    <!-- submit choice button -->
+    <div style="text-align: center;">
+      <a href="#" class="submit-button">Donate</a>
+    </div>
+
   </body>
   <script src="popup.js"></script>
 </html>
