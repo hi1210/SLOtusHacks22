@@ -1,0 +1,60 @@
+@import url("https://use.typekit.net/apd8xej.css");
+
+h1 {
+    font-size: 20pt;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 0.2em;
+}
+
+h3 {
+    font-size: 11pt;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #F18C14;
+}
+
+p {
+    padding-top: 10px;
+    font-size: 13pt;
+}
+
+a {
+    color: #F18C14;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+div.Ukraine {
+    line-height: 0.01em;
+}
+
+.center {
+    padding: 35px 0;
+    text-align: center;
+    display: block;
+    transform: scale(0.8,0.8);
+}
+
+div.pig {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img.pig {
+    transform: scale(0.8,0.8);
+}
+
+body {
+    font-family: halyard-text,sans-serif;
+    font-style: normal;
+    color: #2F2F2F;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
