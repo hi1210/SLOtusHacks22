@@ -4,7 +4,7 @@
     "version": "1.0",
     "manifest_version": 3,
     "permissions": ["storage"],
-    
+
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
@@ -14,6 +14,13 @@
             "128": "/images/get_started128.png"
           }
     },
+
+    "content_scripts": [
+        {
+          "matches": ["*://pay.ebay.com/*"],
+          "js": ["app.js"]
+        }
+      ],
 
     "icons": {
         "16": "/images/get_started16.png",

@@ -23,7 +23,8 @@
         "lint": "eslint --ignore-path .gitignore --ext .js,.ts .",
         "lintFix": "npm run lint -- --fix",
         "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|html)\"",
-        "build": "tsc && prettier --ignore-path .gitignore --write **/*.js"
+        "build": "tsc && prettier --ignore-path .gitignore --write **/*.js",
+        "watch": "tsc --watch"
     },
     "repository": {
         "type": "git",
