@@ -1,12 +1,42 @@
 async function openPopup() {
-    await chrome.tabs.query({ active: true, currentWindow: true });
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     await chrome.windows.create({
-        url: chrome.runtime.getURL('popup.html'),
-        type: 'popup',
+      url: chrome.runtime.getURL("popup.html") ,
+      type: 'popup',
     });
-    console.log('update compilation');
-}
+    // console.log("update compilation");
+  }
 
-chrome.runtime.onMessage.addListener(function () {
-    openPopup();
-});
+
+chrome.runtime.onMessage.addListener(function(object){
+  openPopup()
+  var checkoutPrice = parseFloat(object.total.substring(1));
+  var roundupPrice1 = 0.00;
+  var roundupPrice5 = 0.00;
+
+  //console.log(checkoutPrice)
+  if(checkoutPrice == 0){
+    return
+  }
+  
+  if((checkoutPrice * 100) % 100 == 0){
+    // Case where price is a whole number
+    roundupPrice1 = checkoutPrice + 1
+  }
+  else{
+    // Case where price has decimals
+    var remainder = 1 - (checkoutPrice - Math.floor(checkoutPrice))
+    roundupPrice1 = checkoutPrice + remainder
+  }
+
+  if(checkoutPrice < (Math.floor(checkoutPrice / 10) * 10) + 5){
+    roundupPrice5 = Math.ceil(checkoutPrice / 5) * 5
+  }
+  else{
+    roundupPrice5 = Math.ceil(checkoutPrice / 10) * 10
+  }
+
+  // console.log("Round up price to nearest 1 is: ", roundupPrice1.toFixed(2))
+  // console.log("Round up price to nearest 5 is: ", roundupPrice5.toFixed(2))
+
+})
