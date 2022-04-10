@@ -23,6 +23,10 @@
         {
             "matches": ["*://pay.ebay.com/*"],
             "js": ["app.js"]
+        },
+        {
+            "matches": ["*://donate.wck.org/*"],
+            "js": ["donate.js"]
         }
     ],
 

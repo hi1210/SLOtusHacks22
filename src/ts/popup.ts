@@ -1,6 +1,4 @@
-const string = location.search;
-const params = new URLSearchParams(string);
-const money = params.get('data')!;
+const money = new URLSearchParams(location.search).get('data')!;
 
 console.log(money);
 
@@ -43,6 +41,9 @@ const totalamt = document
     .querySelector('.total')
     ?.querySelector('p') as HTMLElement;
 
+const submit = document.querySelector('a.submit-button') as HTMLLinkElement;
+const completed = submit.href;
+
 console.log(original);
 original.innerText = `$${checkoutPrice.toFixed(2)}`;
 round1text.innerText = `$${roundupPrice1.toFixed(2)} (${(
@@ -60,14 +61,24 @@ totalamt.innerText = `$${roundupPrice1.toFixed(2)} (${(
     roundupPrice1 - checkoutPrice
 ).toFixed(2)})`;
 
+submit.href = `${completed}?donation=${(roundupPrice1 - checkoutPrice).toFixed(
+    2
+)}`;
+
 round1.addEventListener('click', function () {
     totalamt.innerText = `$${roundupPrice1.toFixed(2)} (${(
         roundupPrice1 - checkoutPrice
     ).toFixed(2)})`;
+    submit.href = `${completed}?donation=${(
+        roundupPrice1 - checkoutPrice
+    ).toFixed(2)}`;
 });
 
 round10.addEventListener('click', function () {
     totalamt.innerText = `$${roundupPrice5.toFixed(2)} (${(
         roundupPrice5 - checkoutPrice
     ).toFixed(2)})`;
+    submit.href = `${completed}?donation=${(
+        roundupPrice5 - checkoutPrice
+    ).toFixed(2)}`;
 });
