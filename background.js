@@ -21,13 +21,3 @@ function openPopup() {
 chrome.runtime.onMessage.addListener(function () {
     openPopup();
 });
-// chrome.tabs.onUpdated.addListener(function(){
-// })
-//openPopup()
-// const tab = chrome.tabs.query({ active: true, currentWindow: true });
-// chrome.windows.create({
-//   url: `popup.html?${new URLSearchParams({
-//     tabId: tab.id,
-//   })}` ,
-//   type: "popup",
-// });
