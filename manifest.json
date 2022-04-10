@@ -19,6 +19,13 @@
           }
     },
 
+    "content_scripts": [
+        {
+          "matches": ["*://pay.ebay.com/*"],
+          "js": ["app.js"]
+        }
+      ],
+
     "icons": {
         "16": "/images/get_started16.png",
         "32": "/images/get_started32.png",
