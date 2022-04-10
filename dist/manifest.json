@@ -1,6 +1,6 @@
 {
-    "name": "Slotus Hacks",
-    "description": "SLO Hacks 2022 Pennies for Progress google chrome extension",
+    "name": "Pennies for Progress",
+    "description": "Rounds up your purchase total and donates the change to charity!",
     "version": "1.0",
     "manifest_version": 3,
     "permissions": ["storage", "activeTab", "scripting", "tabs"],
